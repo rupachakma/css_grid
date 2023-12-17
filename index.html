@@ -41,7 +41,35 @@
         grid-column: 1 / -1;
        
     }
-   
+   .container3{
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px auto 50px;
+    height: 300px;
+   }
+   .header1{
+    grid-column: 1 / -1;
+   }
+   .footer1{
+    grid-column: 1 / -1;
+   }
+   .container4{
+    display: grid;
+    height: 400px;
+    /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-rows: repeat(1, 1fr); */
+    grid-template-columns:repeat( 5, 100px);
+    grid-template-rows:repeat( 2, 100px);
+    grid-auto-rows: 1fr;
+    justify-content:center;
+    align-content: center;
+    /* align-items: center;
+    justify-items: center; */
+    background-color: rgb(202, 206, 205);
+    grid-column-gap: 10px;
+    grid-row-gap:10px
+   }
     
 </style>
 
@@ -61,6 +89,24 @@
         <div class="sidebar">Sidebar</div>
         <div class="content">Content</div>
         <div class="footer">Footer</div>
+    </div>
+    <div class="container3">
+        <div class="header1">Header</div>
+        <div class="menu1">Menu</div>
+        <div class="content">Content</div>
+        <div class="footer1">Footer</div>
+    </div>
+    <div class="container4">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+        <div class="d6">6</div>
+        <div class="d7">7</div>
+        <div class="d8">8</div>
+        <div class="d9">9</div>
+        <div class="d10">10</div>
     </div>
 </body>
 </html>
